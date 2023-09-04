@@ -22,15 +22,45 @@
   border-radius: 1000px;
 }
 
-article button {
+.tw-followCard-button {
   margin-left: 16px;
   border: 0;
   border-radius: 999px;
   padding: 6px 16px;
   font-weight: bold;
   cursor: pointer;
+  border: 1px solid #000;
+  transition: .1s ease background-color;
   }
-article button:hover {
-  border-color: #646cff;
+  .tw-followCard-button:hover {
+    border-color: #646cff;
+    opacity: .8;
+  }
+
+
+.tw-followCard-text {
+  display: block; 
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-text {
+  display: none;
+}
+.tw-followCard-button.is-following {
+  border: 1px solid;
+  background-color: transparent;
+  color: #fff;
+  width: 130px;
+}
+.tw-followCard-button.is-following:hover {
+  background-color: rgba(255, 0, 0, 0.307);
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow {
+  display: block;
 }
   
+.tw-followCard-stopFollow {
+  display: None;
+}
